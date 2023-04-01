@@ -18,14 +18,12 @@
           <i class="fa-brands fa-instagram"></i>
         </div>
         <div>
-          <a
-            target="_blank"
-            href="https://www.linkedin.com/in/paolo-lo-re-07999b244/"
+          <a target="_blank" :href="linkedinLink"
             ><i class="fa-brands fa-linkedin"></i
           ></a>
         </div>
         <div>
-          <a target="_blank" href="https://github.com/PaoloWD"
+          <a target="_blank" :href="gitHubLink"
             ><i class="fa-brands fa-github"></i
           ></a>
         </div>
@@ -42,6 +40,8 @@ export default {
     return {
       store,
       screenSize: "",
+      gitHubLink: "https://github.com/PaoloWD",
+      linkedinLink: "https://www.linkedin.com/in/paolo-lo-re-07999b244/",
     };
   },
   mounted() {
@@ -83,6 +83,9 @@ export default {
   }
 }
 a {
+  :hover {
+    transform: translate(0.5);
+  }
   color: white;
 }
 </style>
