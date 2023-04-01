@@ -1,5 +1,5 @@
 <template>
-  <Loader></Loader>
+  <MainLoader></MainLoader>
   <div>
     <Container_img></Container_img>
     <NavBar></NavBar>
@@ -9,7 +9,7 @@
 
 <script>
 import Container_img from "./components/Container_img.vue";
-import Loader from "./components/Loader.vue";
+import MainLoader from "./components/MainLoader.vue";
 import NavBar from "./components/NavBar.vue";
 import { store } from "./store/store";
 export default {
@@ -18,7 +18,7 @@ export default {
       store,
     };
   },
-  components: { Container_img, NavBar, Loader },
+  components: { Container_img, NavBar, MainLoader },
 };
 </script>
 

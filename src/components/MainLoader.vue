@@ -1,12 +1,14 @@
 <template>
   <div v-if="showLoader" id="loader">
-    <div class="loader-content">
-      <h1 id="loader-text">{{ displayText }}</h1>
+    <div class="text-center mt-5">
+      <div class="loader-content">
+        <h1 id="loader-text" v-bind:class="{ explode: isWelcomeTextComplete }">
+          {{ displayText }}
+        </h1>
+      </div>
     </div>
   </div>
-  <div v-else>
-    <!-- il tuo contenuto -->
-  </div>
+  <div v-else></div>
 </template>
 
 <script>
@@ -19,6 +21,11 @@ export default {
       currentIndex: 0,
     };
   },
+  computed: {
+    isWelcomeTextComplete() {
+      return this.currentIndex >= this.welcomeText.length;
+    },
+  },
   mounted() {
     setInterval(() => {
       if (this.currentIndex < this.welcomeText.length) {
@@ -28,12 +35,12 @@ export default {
     }, 200);
     setTimeout(() => {
       this.showLoader = false;
-    }, 4000);
+    }, 3000);
   },
 };
 </script>
 
-<style>
+<style lang="scss">
 #loader {
   position: fixed;
   z-index: 999;
@@ -46,15 +53,28 @@ export default {
 }
 
 .loader-content {
+  font-family: "Minecraft Ten";
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-#loader-text {
-  font-size: 36px;
-  font-weight: bold;
-  text-align: center;
+.explode {
+  animation-name: explode;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes explode {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
 }
 </style>
