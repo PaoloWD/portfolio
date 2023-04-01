@@ -68,9 +68,10 @@ export default {
   text-align: center;
 }
 .jumbotron {
-  background-size: auto;
-  background-repeat: no-repeat;
+  background-size: contain;
+
   background-position: center;
+  background-image: url("../../public/matrix.gif");
 }
 .logo-small {
   img {
