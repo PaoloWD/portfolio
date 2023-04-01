@@ -1,19 +1,5 @@
 <template>
   <div class="bg-dark text-white">
-    <!-- <nav
-      class="navbar navbar-expand-lg navbar-expand-md bg-body-tertiary shadow"
-    >
-      <div class="container-fluid justify-content-center gap-5">
-        <li class="nav-item" v-for="(element, i) in store.links.headerLinks">
-          <router-link
-            class="nav-link"
-            :class="element.active ? 'active' : ''"
-            :to="element.url"
-            ><i :class="element.icon" class="me-2 ms-2"></i>{{ element.name }}
-          </router-link>
-        </li>
-      </div>
-    </nav> -->
     <nav class="navbar navbar-expand-lg navbar-light bg-dark text-white">
       <div class="container justify-content-end">
         <button
@@ -62,13 +48,15 @@
             <ul class="navbar-nav">
               <li
                 class="nav-item"
+                data-bs-dismiss="offcanvas"
                 v-for="(element, i) in store.links.headerLinks"
               >
                 <router-link
                   class="nav-link"
                   :class="element.active ? 'active' : ''"
                   :to="element.url"
-                  ><i :class="element.icon" class="me-2 ms-2"></i
+                >
+                  <i :class="element.icon" class="me-2 ms-2"></i
                   >{{ element.name }}
                 </router-link>
               </li>
