@@ -1,3 +1,3 @@
 <template>
-  <div>Contatti</div>
+  <div class="custom-bg-dark">Contatti</div>
 </template>

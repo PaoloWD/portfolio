@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomePage from "./pages/Home.vue";
 import SuDiMe from "./pages/SuDiMe.vue";
 import Contatti from "./pages/Contatti.vue";
-import Progetti from "./pages/progetti.vue";
+import Progetti from "./pages/Progetti.vue";
 
 const router = createRouter({
   history: createWebHistory(),

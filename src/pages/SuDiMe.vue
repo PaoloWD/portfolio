@@ -1,3 +1,3 @@
 <template>
-  <div>Su di me</div>
+  <div class="custom-bg-dark">Su di me</div>
 </template>

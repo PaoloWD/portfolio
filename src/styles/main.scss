@@ -1,2 +1,21 @@
 @use "bootstrap/scss/bootstrap";
 @use "@fortawesome/fontawesome-free/css/all.min.css";
+$light-blue: #52a1c0;
+$custom-green: #226381;
+$opacity-dark: #1f1f1f;
+
+/****** UTILITIES *******/
+
+.custom-dark {
+  color: $opacity-dark;
+}
+.custom-green {
+  color: $custom-green;
+}
+.custom-blue {
+  color: $light-blue;
+}
+.custom-bg-dark {
+  color: white;
+  background-color: $opacity-dark;
+}
