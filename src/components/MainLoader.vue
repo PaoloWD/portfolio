@@ -16,7 +16,7 @@ export default {
   data() {
     return {
       showLoader: true,
-      welcomeText: "Benvenuto",
+      welcomeText: "Benvenuto     ",
       displayText: "",
       currentIndex: 0,
     };
@@ -35,7 +35,7 @@ export default {
     }, 200);
     setTimeout(() => {
       this.showLoader = false;
-    }, 3000);
+    }, 4000);
   },
 };
 </script>
@@ -62,7 +62,7 @@ export default {
 
 .explode {
   animation-name: explode;
-  animation-duration: 0.5s;
+  animation-duration: 1s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
