@@ -15,15 +15,17 @@
     <div class="p-5 col-lg-6" v-else>
       <div class="d-flex justify-content-end gap-5">
         <div>
-          <i class="fa-brands fa-instagram"></i>
+          <a target="_blank" :href="store.instagramLink"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
         </div>
         <div>
-          <a target="_blank" :href="linkedinLink"
+          <a target="_blank" :href="store.linkedinLink"
             ><i class="fa-brands fa-linkedin"></i
           ></a>
         </div>
         <div>
-          <a target="_blank" :href="gitHubLink"
+          <a target="_blank" :href="store.gitHubLink"
             ><i class="fa-brands fa-github"></i
           ></a>
         </div>
@@ -40,8 +42,6 @@ export default {
     return {
       store,
       screenSize: "",
-      gitHubLink: "https://github.com/PaoloWD",
-      linkedinLink: "https://www.linkedin.com/in/paolo-lo-re-07999b244/",
     };
   },
   mounted() {
@@ -85,7 +85,7 @@ export default {
 }
 a {
   :hover {
-    transform: translate(0.5);
+    color: white;
   }
   color: white;
 }

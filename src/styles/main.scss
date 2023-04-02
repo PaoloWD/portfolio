@@ -19,3 +19,11 @@ $opacity-dark: #1f1f1f;
   color: white;
   background-color: $opacity-dark;
 }
+.minecraft-font {
+  font-family: "Minecraft Ten";
+}
+
+button:hover {
+  transition: transform 0.4s ease-in-out;
+  transform: scale(1.2);
+}

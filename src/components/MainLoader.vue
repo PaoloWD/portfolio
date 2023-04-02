@@ -16,7 +16,7 @@ export default {
   data() {
     return {
       showLoader: true,
-      welcomeText: "Benvenuto     ",
+      welcomeText: "welcome     ",
       displayText: "",
       currentIndex: 0,
     };

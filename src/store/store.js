@@ -28,4 +28,7 @@ export const store = reactive({
       },
     ],
   },
+  gitHubLink: "https://github.com/PaoloWD",
+  linkedinLink: "https://www.linkedin.com/in/paolo-lo-re-07999b244/",
+  instagramLink: "https://instagram.com/paololore_?igshid=ZDdkNTZiNTM=",
 });
